@@ -6,8 +6,8 @@
 
 ### 一. 判断是否需要修改代码
 1. 如果线上环境的App只使用域名访问，没有使用IP地址，并且没有使用底层socket API, 就不用修改代码。
-直接访问IP地址 主要是用在测试环境中。
-大多数app使用的：NSURLSession、NSURLConnection、UIWebView、WKWebView、CFNetwork。所以可以不用修改网络代码，AFNetworking2.x、reachability 这些都不用做任何的改变。 
+直接访问IP地址主要是用在测试环境中。
+大多数app使用的: NSURLSession、NSURLConnection、UIWebView、WKWebView、CFNetwork。所以可以不用修改网络代码，AFNetworking2.x、reachability 这些都不用做任何的改变。 
 不过还是推荐大家升级AFNetworking到最新版本。
 用Swift写的就直接用Alamofire吧。
 
@@ -26,7 +26,7 @@
 
 2. 极少数app不支持IPv6，比如：微信.
 
-### 三. DNS64/ NAT64
+### 三. DNS64/NAT64
  DNS64/NAT64过渡工作流程:
 
  1、提供独立的IPv4和IPv6连接 的 蜂窝网络，把IPv4的网络升级到IPv6
